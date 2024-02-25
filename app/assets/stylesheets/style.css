@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.nav-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(39, 159, 159, 0.71);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 999;
+}
+
+.nav-section li {
+    list-style: none;
+    padding: 1rem 0;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+}
+
+.nav-section a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 5vw;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.nav-section a:hover {
+    color: rgba(43, 255, 0, 0.57);
+}
