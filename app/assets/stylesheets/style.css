@@ -39,3 +39,19 @@ html {
 .nav-section a:hover {
     color: rgba(43, 255, 0, 0.57);
 }
+
+/* When clicked Home change styles */
+.nav-section.small {
+    align-items: flex-start;
+    width: 20%;
+    padding: 2rem 0;
+}
+
+.nav-section.small li {
+    padding: 2rem 0;
+}
+
+.nav-section.small a {
+    font-size: 2vw;
+    padding: 2rem;
+}
