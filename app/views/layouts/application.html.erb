@@ -11,6 +11,20 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container" data-controller="home" data-home-target="container">
+      <nav class="nav-section" data-home-target="nav">
+        <ul>
+          <li><a href="/" data-action="click->home#changeWidth" data-home-clicked="false">Home</a></li>
+          <li><a href="/blog" data-action="click->home#changeWidth" data-home-clicked="false">Blog</a></li>
+          <li><a href="/projects" data-action="click->home#changeWidth" data-home-clicked="false">Projects</a></li>
+          <li><a href="/services" data-action="click->home#changeWidth" data-home-clicked="false">Services</a></li>
+          <li><a href="/contact" data-action="click->home#changeWidth" data-home-clicked="false">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="content" data-home-target="content">
+        <%= yield %>
+      </div>
+    </div>
   </body>
 </html>
