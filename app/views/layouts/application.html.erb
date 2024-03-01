@@ -9,14 +9,15 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
     <%#= javascript_include_tag "turbo" %>
+    <meta name="turbo-prefetch" content="false">
   </head>
 
   <body>
     <div class="container" data-controller="home" data-home-target="container">
       <nav class="nav-section" data-home-target="nav">
         <ul>
-          <li><%= link_to 'Home', root_path, data: { action: "click->home#changeWidth", home_clicked: false, turbo_prefetch: false } %></li>
-          <li><%= link_to 'Blog', blog_path, data: { action: "click->home#changeWidth", home_clicked: false, turbo_prefetch: false } %></li>
+          <li><%= link_to 'Home', root_path, data: { action: "click->home#changeWidth", home_clicked: false } %></li>
+          <li><%= link_to 'Blog', blog_path, data: { action: "click->home#changeWidth", home_clicked: false } %></li>
           <li><%= link_to 'Projects', projects_path, data: { action: "click->home#changeWidth", home_clicked: false } %></li>
           <li><%= link_to 'Services', services_path, data: { action: "click->home#changeWidth", home_clicked: false } %></li>
 <!--          <li><%#= link_to 'Contact', contact_path, remote: true, class: 'nav-link' %></li>-->

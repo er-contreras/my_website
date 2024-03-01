@@ -14,8 +14,6 @@ export default class extends Controller {
   }
 
   changeWidth(event) {
-    event.preventDefault();
-
     const link = event.target;
     const clicked = link.getAttribute('data-home-clicked');
 
