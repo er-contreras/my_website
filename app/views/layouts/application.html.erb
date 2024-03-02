@@ -1,32 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>MyWebsite</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+  <title>Welcome! | Erick's Website</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_importmap_tags %>
-    <%#= javascript_include_tag "turbo" %>
-    <meta name="turbo-prefetch" content="false">
-  </head>
+  <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+  <%= javascript_importmap_tags %>
+  <%= javascript_include_tag "turbo" %>
+  <meta name="turbo-prefetch" content="false">
+</head>
 
-  <body>
-    <div class="container" data-controller="home" data-home-target="container">
-      <nav class="nav-section" data-home-target="nav">
-        <ul>
-          <li><%= link_to 'Home', root_path, data: { action: "click->home#changeWidth", home_clicked: false } %></li>
-          <li><%= link_to 'Blog', blog_path, data: { action: "click->home#changeWidth", home_clicked: false } %></li>
-          <li><%= link_to 'Projects', projects_path, data: { action: "click->home#changeWidth", home_clicked: false } %></li>
-          <li><%= link_to 'Services', services_path, data: { action: "click->home#changeWidth", home_clicked: false } %></li>
-<!--          <li><%#= link_to 'Contact', contact_path, remote: true, class: 'nav-link' %></li>-->
-        </ul>
-      </nav>
-
-      <div class="content" data-home-target="content">
-        <%= yield %>
-      </div>
+<body>
+<div class="imagebg"></div>
+<header id="site-header">
+  <div class="full-container">
+    <div class="buttons">
+      <a href="https://calendly.com/er-contreras/30min" target="_blank">
+        ☎ Book a
+        <u>Free</u>
+        Consultation
+      </a>
+      <a href="/#Sign-up">Sign Up</a>
     </div>
-  </body>
+
+    <ul>
+      <li><%= link_to 'Home', root_path %></li>
+      <li><%= link_to 'Curriculum', curriculum_path %></li>
+      <li><%= link_to 'Projects', projects_path %></li>
+      <li><%= link_to 'Services', services_path %></li>
+      <!--      <li><%#= link_to 'Contact', contact_path %></li>-->
+    </ul>
+  </div>
+
+  <div class="container">
+    <a>Erick Contreras Web Developer </a>
+    <h1>
+      Pro Developer
+      <br>
+      Get your custom website today!
+    </h1>
+  </div>
+</header>
+
+<%#= yield %>
+</body>
 </html>

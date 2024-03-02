@@ -1,66 +1,44 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
-.container {
-    display: flex;
-    /*height: 100vh;*/
+header {
+  padding: 1rem 0;
 }
 
-.content {
-    /*width: 100vw;*/
+#site-header ul {
+  text-align: right;
+  list-style: none;
 }
 
-.hidden {
-    display: none;
+#site-header ul li {
+  display: inline;
+  margin: 0 1rem;
 }
 
-.nav-section {
-    display: flex;
-    justify-content: space-evenly;
-    background-color: rgba(39, 159, 159, 0.71);
-    align-items: center;
-    height: 100vh;
+.full-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 2rem;
+  flex-direction: column;
 }
 
-.nav-section li {
-    list-style: none;
-    padding: 1rem 0;
-    text-align: center;
-    width: 100%;
-    border-bottom: 1px solid #fff;
+.buttons {
+  text-align: right;
 }
 
-.nav-section a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 5vw;
-    letter-spacing: 2px;
-    transition: 0.5s;
-}
-
-.nav-section a:hover {
-    color: rgba(43, 255, 0, 0.57);
-}
-
-/* When clicked Home change styles */
-.nav-section.small {
-    align-items: flex-start;
-    width: 20%;
-    padding: 2rem 0;
-}
-
-.nav-section.small li {
-    padding: 2rem 0;
-}
-
-.nav-section.small a {
-    font-size: 2vw;
-    padding: 2rem;
+.imagebg {
+  background-image: url("./coffee_shop.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: -1;
 }
