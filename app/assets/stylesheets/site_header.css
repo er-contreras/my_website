@@ -1,0 +1,38 @@
+header {
+  padding: 1rem 0;
+}
+
+#site-header ul {
+  text-align: right;
+  list-style: none;
+}
+
+#site-header ul li {
+  display: inline;
+  margin: 0 1rem;
+}
+
+.full-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 2rem;
+  flex-direction: column;
+}
+
+.buttons {
+  text-align: right;
+}
+
+.container {
+  /*margin: 0 10rem;*/
+  padding: 15rem 7rem;
+}
+
+.container a {
+  font-size: 3rem;
+}
+
+.container h1 {
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+}

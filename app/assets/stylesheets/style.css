@@ -8,31 +8,6 @@ html {
   font-size: 62.5%;
 }
 
-header {
-  padding: 1rem 0;
-}
-
-#site-header ul {
-  text-align: right;
-  list-style: none;
-}
-
-#site-header ul li {
-  display: inline;
-  margin: 0 1rem;
-}
-
-.full-container {
-  display: flex;
-  justify-content: flex-end;
-  padding: 0 2rem;
-  flex-direction: column;
-}
-
-.buttons {
-  text-align: right;
-}
-
 .imagebg {
   background-image: url("./coffee_shop.png");
   background-size: contain;
