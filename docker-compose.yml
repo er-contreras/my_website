@@ -1,9 +1,28 @@
 services:
   web:
     build:
-      dockerfile: Dockerfile.dev
+      dockerfile: Dockerfile-dev
     ports:
       - "3000:3000"
     volumes:
       - .:/usr/src/app
-    command: rails s -b 0.0.0.0
+    command: "rails s -b 0.0.0.0"
+    env_file:
+      - .env
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres:latest
+    container_name: my_website_container
+    environment:
+      POSTGRES_USER: "${USER}"
+      POSTGRES_DB: "my_website_development"
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+
+volumes:
+  postgres-data:
+  bundle-volume:
