@@ -1,0 +1,35 @@
+main .section-content {
+
+}
+
+main .outer {
+  max-width: 60%;
+  margin: 0 auto;
+  background-color: white;
+  height: 80rem;
+}
+
+main .container {
+  max-width: 100%;
+  font-size: 3rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  padding: 6rem;
+}
+
+.bgimage-col1 {
+  background-image: url("./image1.jpg");
+  background-size: cover;
+  height: 30%;
+  width: 30%;
+}
+
+.bgimage-col2 {
+  background-image: url("./image2.jpeg");
+  background-size: cover;
+  height: 30%;
+  width: 30%;
+}
