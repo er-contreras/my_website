@@ -6,30 +6,47 @@ main .outer {
   max-width: 60%;
   margin: 0 auto;
   background-color: white;
-  height: 80rem;
+  height: 100rem;
 }
 
 main .container {
-  max-width: 100%;
-  font-size: 3rem;
+  font-size: 2rem;
+  height: 100%;
 }
 
-.row {
+main .row {
   display: flex;
   justify-content: space-around;
   padding: 6rem;
+  height: 100%;
+}
+
+.col1, .col2 {
+  max-width: 40rem;
+}
+
+.col1 h4, .col2 h4{
+  font-size: 3rem;
+  margin: 0 0 2rem 0;
+  color: #193ab6;
 }
 
 .bgimage-col1 {
-  background-image: url("./image1.jpg");
-  background-size: cover;
-  height: 30%;
-  width: 30%;
+  background-image: url("./page1.svg");
 }
 
 .bgimage-col2 {
-  background-image: url("./image2.jpeg");
-  background-size: cover;
-  height: 30%;
-  width: 30%;
+  background-image: url("./website.svg");
+}
+
+.bgimage-col1, .bgimage-col2 {
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 10%;
+  width: 20%;
+}
+
+main li::marker {
+  color: #193ab6;
+  line-height: 5rem;
 }
