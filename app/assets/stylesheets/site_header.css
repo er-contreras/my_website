@@ -149,3 +149,35 @@ header {
     width: 5rem;
   }
 }
+
+/* modal */
+#modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(17, 0, 255);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80vw;
+}
+
+.modal-content ul {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.modal-x {
+  font-size: 4rem;
+  color: #000000;
+}
