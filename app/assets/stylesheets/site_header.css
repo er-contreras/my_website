@@ -108,3 +108,26 @@ header {
 .btn-right {
   margin: 0 0 0 1rem;
 }
+
+/* query for mobile */
+@media (max-width: 1450px) {
+  #site-header .container h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 1192px) {
+  #site-header .container {
+    width: 60%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .full-container {
+    display: none;
+  }
+
+  #site-header .container {
+    width: 75%;
+  }
+}

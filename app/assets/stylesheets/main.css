@@ -1,9 +1,9 @@
 .polygon {
   clip-path: polygon(0% 100%, 100% 100%, 100% 35%, -12% 98%);
   background-color: #ffffff;
-  padding: 12rem 0;
   position: absolute;
   width: 100%;
+  height: 23rem;
   z-index: -1;
 }
 
@@ -88,4 +88,28 @@ footer {
 
 .social-media svg {
   max-width: 50%;
+}
+
+/* Media queries */
+@media (max-width: 1860px) {
+  .polygon {
+    height: 20rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  main .row {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  main .container {
+    width: 100%;
+  }
+
+  .bgimage-col1, .bgimage-col2 {
+    height: 8rem;
+    margin-top: 8rem;
+  }
 }
