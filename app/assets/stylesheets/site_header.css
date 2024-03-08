@@ -109,6 +109,10 @@ header {
   margin: 0 0 0 1rem;
 }
 
+.hamburger-menu {
+  display: none;
+}
+
 /* query for mobile */
 @media (max-width: 1450px) {
   #site-header .container h1 {
@@ -129,5 +133,19 @@ header {
 
   #site-header .container {
     width: 75%;
+    padding-top: 24%;
+  }
+
+  .hamburger-menu {
+    display: block;
+    position: absolute;
+    top: 2rem;
+    right: 4rem;
+    font-size: 3rem;
+    color: white;
+  }
+
+  .hamburger-menu svg {
+    width: 5rem;
   }
 }
