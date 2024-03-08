@@ -13,7 +13,7 @@ header {
 }
 
 #site-header {
-  height: 79vh;
+  height: 77vh;
 }
 
 #site-header ul {
@@ -30,7 +30,7 @@ header {
   width: 50%;
   margin: 0 auto;
   color: white;
-  padding-top: 20%;
+  padding-top: 12%;
 }
 
 #site-header .container a {
@@ -39,7 +39,7 @@ header {
 }
 
 #site-header .container h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   margin-top: 3rem;
 }
 
