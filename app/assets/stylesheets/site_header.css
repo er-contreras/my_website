@@ -151,6 +151,7 @@ header {
   }
 
   .hamburger-menu svg {
+    height: 4rem;
     width: 5rem;
   }
 
