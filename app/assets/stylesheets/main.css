@@ -113,3 +113,15 @@ footer {
     margin-top: 8rem;
   }
 }
+
+@media (max-width: 530px) {
+  main .container {
+    padding: 0 4rem;
+  }
+}
+
+@media (max-width: 390px) {
+  main ul li {
+    font-size: 1.5rem;
+  }
+}
