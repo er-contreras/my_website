@@ -6,6 +6,12 @@ export default class extends Controller {
   open(event) {
     // Change display none to block
     document.getElementById("modal").style.display = "block";
+
+    // Allow touch click on mobile phone
+    document.getElementById("modal").addEventListener("touchstart", function (e) {
+        e.stopPropagation();
+      }
+    );
   }
 
   close(event) {
