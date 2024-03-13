@@ -7,4 +7,6 @@ Rails.application.routes.draw do
   get '/projects', to: 'projects#index'
   get '/services', to: 'services#index'
   get '/about', to: 'about#index'
+
+  resources :payments
 end
