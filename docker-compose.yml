@@ -17,6 +17,7 @@ services:
     container_name: my_website_container
     environment:
       POSTGRES_USER: "${USER}"
+      POSTGRES_PASSWORD: "postgres"
       POSTGRES_DB: "my_website_development"
     ports:
       - "5432:5432"
