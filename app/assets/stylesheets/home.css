@@ -1,0 +1,39 @@
+.col1 h4, .col2 h4{
+  font-size: 2.3rem;
+  margin: 2rem 0;
+  color: #193ab6;
+}
+
+.bgimage-col1 {
+  background-image: url("./page1.svg");
+}
+
+.bgimage-col2 {
+  background-image: url("./website.svg");
+}
+
+.bgimage-col1, .bgimage-col2 {
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 10%;
+  width: 20%;
+}
+
+main li::marker {
+  color: #193ab6;
+  line-height: 5rem;
+}
+
+/* Media queries */
+@media (max-width: 1000px) {
+  .bgimage-col1, .bgimage-col2 {
+    height: 8rem;
+    margin-top: 8rem;
+  }
+}
+
+@media (max-width: 390px) {
+  main ul li {
+    font-size: 1.5rem;
+  }
+}

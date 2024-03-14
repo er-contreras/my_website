@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
   get '/curriculum', to: 'curriculum#index'
   get '/projects', to: 'projects#index'
-  get '/services', to: 'services#index'
+  get '/pricing', to: 'pricing#index'
   get '/about', to: 'about#index'
 
   resources :payments
