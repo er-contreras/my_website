@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   root "home#index"
 
-  get '/curriculum', to: 'curriculum#index'
+  get '/skills', to: 'skills#index'
   get '/projects', to: 'projects#index'
   get '/pricing', to: 'pricing#index'
   get '/about', to: 'about#index'

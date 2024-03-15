@@ -1,5 +1,3 @@
 class ProjectsController < ApplicationController
-  def index
-    render "projects/index"
-  end
+  def index; end
 end
