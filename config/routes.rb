@@ -9,4 +9,6 @@ Rails.application.routes.draw do
   get '/about', to: 'about#index'
 
   resources :payments
+
+  post '/set_locale', to: 'application#set_locale'
 end
