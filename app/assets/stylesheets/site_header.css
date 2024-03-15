@@ -17,7 +17,6 @@ header {
 }
 
 #site-header button {
-  /* removc default button styles */
   background: none;
   border: none;
   padding: 0;

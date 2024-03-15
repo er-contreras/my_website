@@ -15,7 +15,7 @@
 <body>
 <!--<div class="imagebg"></div>-->
 <video id="myVideo" playsinline autoplay muted loop>
-  <source src="https://active-storage-rails-tutorial-er.s3.us-east-2.amazonaws.com/vectores.mp4?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHQaCXVzLXdlc3QtMiJGMEQCIHMpFVNNtqjv2doWv8t1RZ9MuVWz51wHb5OlFIJJe3HMAiBZnaSapfE4Zi3PhvX1JIWLQ5SF65MbjPlaQxjiG1%2BOcyrkAgh9EAAaDDYxODAxNzY3NDAyMSIMR1RBvpEsCdhGacyRKsECfb3Ff0ctFMySLfBHne3Cy7qfY8eBIBWpqwXpVRWVEfJZU0OxsldGf%2Fmcy10KVRqY6cYyHUI4cZgAIanhtETjbdMoliBEX6ubS3dXM3AK5sNU0GsESrBwf%2F1zcWo2LNc2%2F2LWZ1mqnCVjVsE3Zjsckjk%2BL3vwHvvuvMsOJDgflUjPj0%2FaXAOcHCJQ1Qs6fvaI14W%2FBjbsxHua6fDKL8teHsl9OZulJFZby7WtDlQlLF6OjAHKaD07BSfJQ4IhJU7zPKOqgcko5nAPIv0M3ncy1blMnkr6fShyN9LgeQ1xyJ6XqCeMfJ9ZC4TeABBlbTC9eWZGW5I8tQjrJRtDtxTjQlpENfTo2p9vrcGcHxndXkLHfmc8SmlAOL22Z165zMwfIUEr4ixCwo%2BWmiqFNZmBCAkMUiViir1eMwo3OH9LGMZiMMCkza8GOrQCN%2F0wEaGRrn%2FZ8CsOU0tbMo8XobgAbguLxCeOlnSugHH1vgwRIDD8Ep5HyCeNLLnUN0iaou23DyMDXn%2BebWT7TPvEOQtk3Oj6%2FebYcvHzpFN3pxCfHZKVOxNS5OJDjcw%2Bmh0bp4cvWuwczDA2hKkPrIAnBHR7gmzkL8%2BV2%2FPPFxJzozgitwc4So6cBfl9YiYpT5Ax%2FG72jQXVkdZyKQYwLMcCLRF7UTx4GTdvZ8WEGCLZlI2aqPY7XSSOGBnKkpsxm80sku93izUP9tdrVWBy91P1N0m0z1Ad6XXXW6YVwzCfsXvl9eB1t%2FxV%2BtLbTABPG%2FtMx869haC5PNncmWrOSSxq0GyUncMsoiZyE7QXJ57quEH6ijuk48Vh7A3I4xuG6VR4%2FBCh%2FqU9jiJ%2F%2B1VoRc1eHGk%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20240314T194336Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAY7ZFZKMSXSG54TNS%2F20240314%2Fus-east-2%2Fs3%2Faws4_request&X-Amz-Signature=11f8c1e0fea43a4ceb61af87a138044d01c99eef431618627b7495c6ef427fe1" type="video/mp4">
+  <source src="<%= ENV['S3_BUCKET_VIDEO'] %>" type="video/mp4">
 </video>
 
 <header id="site-header" data-controller="modal">
