@@ -1,19 +1,9 @@
-/*.imagebg {*/
-/*  background-image: url("");*/
-/*  background-size: cover;*/
-/*  background-repeat: no-repeat;*/
-/*  height: 100%;*/
-/*  width: 100%;*/
-/*  position: absolute;*/
-/*  z-index: -1;*/
-/*}*/
-
 header {
   padding: 4rem 0;
 }
 
 #site-header {
-  height: 77vh;
+  height: 75vh;
 }
 
 #site-header button {
@@ -48,8 +38,10 @@ header {
 }
 
 #site-header .container h1 {
-  font-size: 4rem;
+  font-size: 5rem;
   margin-top: 3rem;
+  line-height: 6rem;
+  letter-spacing: 0.2rem;
 }
 
 .full-container {

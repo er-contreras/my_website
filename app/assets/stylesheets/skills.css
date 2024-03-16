@@ -1,3 +1,7 @@
+.skills-content {
+  font-size: 1.7rem;
+}
+
 .skills-content p {
   margin: 4rem 0;
 }
@@ -20,10 +24,14 @@
   padding: 3rem;
 }
 
-.left {
+.right {
   flex-direction: row-reverse;
 }
 
-.right {
-  flex-direction: row;
+.language-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 65%;
+  padding: 0 4rem;
 }
