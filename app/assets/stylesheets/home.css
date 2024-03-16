@@ -29,10 +29,21 @@ main li::marker {
 }
 
 /* Media queries */
+@media (max-width: 1450px) {
+  #site-header .container {
+    padding-top: 14%!important;
+    text-align: center;
+  }
+}
+
 @media (max-width: 1000px) {
+  main .container {
+    padding: 3rem 0 0 0;
+  }
+
   .bgimage-col1, .bgimage-col2 {
     height: 8rem;
-    margin-top: 8rem;
+    margin-top: 0rem;
   }
 }
 
