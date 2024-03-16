@@ -1,0 +1,29 @@
+.skills-content p {
+  margin: 4rem 0;
+}
+
+.language-content {
+  display: flex;
+  max-width: 100%;
+  padding: 0 0 4rem 0;
+}
+
+.language-img-content {
+  display: flex;
+  justify-content: center;
+  background-color: #f7f7f7;
+  max-width: 40%;
+}
+
+.language-img-content img {
+  width: 60%;
+  padding: 3rem;
+}
+
+.left {
+  flex-direction: row-reverse;
+}
+
+.right {
+  flex-direction: row;
+}

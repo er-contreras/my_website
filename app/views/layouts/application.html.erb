@@ -19,7 +19,7 @@
   <source src="<%= ENV['S3_BUCKET_VIDEO'] %>" type="video/mp4">
 </video>
 
-<header id="site-header" data-controller="modal">
+<header id="site-header" style="height: <%= current_page?(root_path) ? '77vh;' : '34vh;' %>" data-controller="modal">
   <!-- Hamburger button -->
   <button class="hamburger-menu" data-action="click->modal#open">
     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256" data-t>
@@ -76,7 +76,7 @@
     </ul>
   </div>
 
-  <div class="container">
+  <div class="container" style="padding-top: <%= current_page?(root_path) ? '12%;' : '7%;' %>">
     <a>Erick C. Website, <span style="color: yellow">Under Construction! 👨🏻‍💻</span> </a>
 
     <% if current_page?(root_path) %>
@@ -89,7 +89,17 @@
   </div>
 </header>
 
-<%= yield %>
+<main>
+  <div class="polygon"></div>
+
+  <section class="section-content">
+    <div class="outer">
+      <div class="container skills-content">
+        <%= yield %>
+      </div>
+    </div>
+  </section>
+</main>
 
 <footer>
   <div class="rights-reserved">
