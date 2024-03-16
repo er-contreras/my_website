@@ -35,3 +35,7 @@
   max-width: 65%;
   padding: 0 4rem;
 }
+
+.language-description strong {
+  color: var(--blue);
+}
