@@ -7,6 +7,7 @@ header {
 }
 
 #site-header button {
+  right: 17px;
   background: none;
   border: none;
   padding: 0;
@@ -204,6 +205,12 @@ header {
     line-height: 6rem;
     letter-spacing: 0.1rem;
   }
+
+  .rights-reserved p:first-child {
+    font-size: 1.5rem!important;
+    color: #3d3d3d;
+    font-weight: bold;
+  }
 }
 
 @media (max-width: 508px) {
@@ -211,11 +218,15 @@ header {
     line-height: 4rem;
     letter-spacing: 0.01rem;
   }
+
+  main .section-content {
+    padding: 0 0 1rem 0!important;
+  }
 }
 
 @media (max-width: 480px) {
   #site-header {
-    height: 35vh!important;
+    height: 37vh!important;
   }
 
   .modal-buttons {
@@ -227,7 +238,36 @@ header {
   }
 
   #site-header .container a {
-    font-size: 1rem;
+    font-size: 1.3rem;
+  }
+
+  .hamburger-menu svg {
+    width: 3rem;
+  }
+
+  .social-media svg {
+    max-width: 37% !important;
+  }
+
+  .rights-reserved p:last-child {
+    font-size: 1rem!important;
+    margin-bottom: 0!important;
+    color: #939393;
+  }
+
+  footer {
+    padding: 2rem 0 0 0!important;
+  }
+
+  .social-media {
+    margin: 0 auto;
+    max-width: 60% !important;
+    /* display: flex; */
+    /* justify-content: center; */
+  }
+
+  .social-media svg {
+    max-width: 53% !important;
   }
 }
 
