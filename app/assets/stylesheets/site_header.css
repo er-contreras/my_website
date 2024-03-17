@@ -267,8 +267,8 @@ header {
 }
 
 @media (max-width: 480px) {
-  #site-header, #site-header-other-paths {
-    height: 30vh!important;
+  #site-header {
+    height: 37vh!important;
   }
 
   #site-header-other-paths {
@@ -287,7 +287,6 @@ header {
 
   #site-header .container a, #site-header-other-paths .container a {
     display: grid;
-    /*font-size: 1.3rem;*/
   }
 
   .social-media svg {
@@ -307,8 +306,6 @@ header {
   .social-media {
     margin: 0 auto;
     max-width: 60% !important;
-    /* display: flex; */
-    /* justify-content: center; */
   }
 
   .social-media svg {
