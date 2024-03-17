@@ -116,6 +116,13 @@ header {
   display: none;
 }
 
+.hamburger-menu-line {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+}
+
 /* query for mobile */
 @media (max-width: 1450px) {
   #site-header .container h1 {
