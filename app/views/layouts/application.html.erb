@@ -19,7 +19,7 @@
   <source src="<%= ENV['S3_BUCKET_VIDEO'] %>" type="video/mp4">
 </video>
 
-<header id="site-header" style="height: <%= current_page?(root_path) ? '77vh;' : '34vh;' %>" data-controller="modal">
+<header id="<%= current_page?(root_path) ? 'site-header' : 'site-header-other-paths' %>" data-controller="modal">
   <!-- Hamburger button -->
   <button id="hamburger-menu" data-action="click->modal#open touchstart->modal#open">
     <div class="hamburger-menu-line"></div>

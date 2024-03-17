@@ -6,7 +6,11 @@ header {
   height: 75vh;
 }
 
-#site-header button {
+#site-header-other-paths {
+  height: 34vh;
+}
+
+#site-header button, #site-header-other-paths button {
   right: 17px;
   background: none;
   border: none;
@@ -16,29 +20,29 @@ header {
   outline: inherit;
 }
 
-#site-header ul {
+#site-header ul, #site-header-other-paths ul {
   text-align: right;
   list-style: none;
 }
 
-#site-header ul li {
+#site-header ul li, #site-header-other-paths ul li {
   display: inline;
   margin: 0 2rem;
 }
 
-#site-header .container {
+#site-header .container, #site-header-other-paths .container {
   width: 50%;
   margin: 0 auto;
   color: white;
   padding-top: 12%;
 }
 
-#site-header .container a {
+#site-header .container a, #site-header-other-paths .container a {
   font-size: 2.5rem;
   margin-bottom: 5rem;
 }
 
-#site-header .container h1 {
+#site-header .container h1, #site-header-other-paths .container h1 {
   font-size: 5rem;
   margin-top: 3rem;
   line-height: 6rem;
@@ -125,13 +129,13 @@ header {
 
 /* query for mobile */
 @media (max-width: 1450px) {
-  #site-header .container h1 {
+  #site-header .container h1, #site-header-other-paths .container h1{
     font-size: 3rem;
   }
 }
 
 @media (max-width: 1192px) {
-  #site-header .container {
+  #site-header .container, #site-header-other-paths .container{
     width: 60%;
   }
 }
@@ -141,16 +145,22 @@ header {
     display: none;
   }
 
-  #site-header {
+  #site-header, #site-header-other-paths {
     height: 55vh!important;
   }
 
-  #site-header .container {
+  #site-header-other-paths {
+    padding: 8rem 0 0 0;
+    height: 21vh !important;
+    text-align: center;
+  }
+
+  #site-header .container, #site-header-other-paths .container {
     width: 75%;
     padding-top: 24%;
   }
 
-  #site-header ul {
+  #site-header ul, #site-header-other-paths ul {
     text-align: left;
   }
 
@@ -170,39 +180,57 @@ header {
 }
 
 @media (max-width: 886px) {
-  #site-header {
+  #site-header, #site-header-other-paths {
     height: 50vh!important;
+  }
+
+  #site-header-other-paths {
+    padding: 8rem 0 0 0;
+    height: 21vh !important;
+    text-align: center;
   }
 }
 
 @media (max-width: 800px) {
-  #site-header .container {
+  #site-header .container, #site-header-other-paths .container {
     width: 86%;
     padding-top: 33%;
+  }
+
+  #site-header-other-paths {
+    padding: 8rem 0 0 0;
+    height: 21vh !important;
+    text-align: center;
   }
 }
 
 @media (max-width: 645px) {
-  #site-header {
+  #site-header, #site-header-other-paths {
     height: 45vh!important;
   }
 
-  #site-header .container {
+  #site-header .container, #site-header-other-paths .container {
     width: 85%;
     padding-top: 40%;
   }
 
-  #site-header .container a {
+  #site-header .container a, #site-header-other-paths .container a {
     font-size: 2rem;
+  }
+
+  #site-header-other-paths {
+    padding: 8rem 0 0 0;
+    height: 21vh !important;
+    text-align: center;
   }
 }
 
 @media (max-width: 540px) {
-  #site-header .container a {
+  #site-header .container a, #site-header-other-paths .container a {
     font-size: 1.5rem;
   }
 
-  #site-header .container h1 {
+  #site-header .container h1, #site-header-other-paths .container h1 {
     margin-top: 3rem;
     line-height: 6rem;
     letter-spacing: 0.1rem;
@@ -213,10 +241,16 @@ header {
     color: #3d3d3d;
     font-weight: bold;
   }
+
+  #site-header-other-paths {
+    padding: 8rem 0 0 0;
+    height: 21vh !important;
+    text-align: center;
+  }
 }
 
 @media (max-width: 508px) {
-  #site-header .container h1 {
+  #site-header .container h1, #site-header-other-paths .container h1 {
     line-height: 4rem;
     letter-spacing: 0.01rem;
   }
@@ -224,22 +258,34 @@ header {
   main .section-content {
     padding: 0 0 1rem 0!important;
   }
+
+  #site-header-other-paths {
+    padding: 8rem 0 0 0;
+    height: 21vh !important;
+    text-align: center;
+  }
 }
 
 @media (max-width: 480px) {
-  #site-header {
-    height: 37vh!important;
+  #site-header, #site-header-other-paths {
+    height: 30vh!important;
+  }
+
+  #site-header-other-paths {
+    padding: 8rem 0 0 0;
+    height: 21vh !important;
+    text-align: center;
   }
 
   .modal-buttons {
     font-size: 2rem;
   }
 
-  #site-header .container h1 {
+  #site-header .container h1, #site-header-other-paths .container h1 {
     font-size: 2rem;
   }
 
-  #site-header .container a {
+  #site-header .container a, #site-header-other-paths .container a {
     display: grid;
     /*font-size: 1.3rem;*/
   }
@@ -271,16 +317,22 @@ header {
 }
 
 @media (max-width: 375px) {
-  #site-header .container h1 {
+  #site-header .container h1, #site-header-other-paths .container h1 {
     font-size: 1.5rem;
   }
 
-  #site-header .container a {
+  #site-header .container a, #site-header-other-paths .container a {
     /*font-size: 1rem;*/
   }
 
   .rights-reserved p:first-child {
     font-size: 1rem!important;
+  }
+
+  #site-header-other-paths {
+    padding: 8rem 0 0 0;
+    height: 21vh !important;
+    text-align: center;
   }
 }
 
