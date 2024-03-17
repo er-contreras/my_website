@@ -18,9 +18,16 @@ export default class extends Controller {
   // }
 
   open(event) {
+    event.preventDefault();
     // Change display none to block
     console.log("click open", event.target);
-    document.getElementById("modal").style.display = "block";
+
+    this.element.addEventListener("touchstart", function (e) {
+      console.log("click");
+      console.log(e.target);
+      console.log(this);
+      document.getElementById("modal").style.display = "block";
+    });
   }
 
   close(event) {
