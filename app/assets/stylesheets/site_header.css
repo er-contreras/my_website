@@ -240,7 +240,8 @@ header {
   }
 
   #site-header .container a {
-    font-size: 1.3rem;
+    display: grid;
+    /*font-size: 1.3rem;*/
   }
 
   .social-media svg {
@@ -266,6 +267,20 @@ header {
 
   .social-media svg {
     max-width: 53% !important;
+  }
+}
+
+@media (max-width: 375px) {
+  #site-header .container h1 {
+    font-size: 1.5rem;
+  }
+
+  #site-header .container a {
+    /*font-size: 1rem;*/
+  }
+
+  .rights-reserved p:first-child {
+    font-size: 1rem!important;
   }
 }
 
@@ -315,7 +330,8 @@ header {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  width: 28rem;
+  width: 30rem;
+  text-align: center;
 }
 
 .modal-buttons-btn-left, .modal-buttons-btn-right {

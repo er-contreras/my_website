@@ -39,3 +39,32 @@
 .language-description strong {
   color: var(--blue);
 }
+
+@media (max-width: 800px) {
+  .language-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    padding: 0 0 4rem 0;
+  }
+
+  .language-img-content {
+    display: flex;
+    justify-content: center;
+    background-color: #f7f7f7;
+    max-width: 100%;
+  }
+
+  .language-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+    padding: 0 4rem;
+  }
+
+  .language-description strong {
+    text-align: center;
+  }
+}
