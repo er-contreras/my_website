@@ -112,7 +112,7 @@ header {
   margin: 0 0 0 1rem;
 }
 
-.hamburger-menu {
+#hamburger-menu {
   display: none;
 }
 
@@ -154,7 +154,7 @@ header {
     text-align: left;
   }
 
-  .hamburger-menu {
+  #hamburger-menu {
     display: block;
     position: absolute;
     top: 2rem;
@@ -162,11 +162,6 @@ header {
     font-size: 3rem;
     color: white;
     cursor: pointer;
-  }
-
-  .hamburger-menu svg {
-    height: 4rem;
-    width: 5rem;
   }
 
   .buttons {
@@ -248,10 +243,6 @@ header {
     font-size: 1.3rem;
   }
 
-  .hamburger-menu svg {
-    width: 3rem;
-  }
-
   .social-media svg {
     max-width: 37% !important;
   }
@@ -317,6 +308,7 @@ header {
   color: #ffffff;
   text-align: end;
   margin: 3rem;
+  cursor: pointer;
 }
 
 .modal-buttons {
