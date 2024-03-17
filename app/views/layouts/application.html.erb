@@ -21,7 +21,7 @@
 
 <header id="site-header" style="height: <%= current_page?(root_path) ? '77vh;' : '34vh;' %>" data-controller="modal">
   <!-- Hamburger button -->
-  <button id="hamburger-menu" data-action="touchstart->modal#open">
+  <button id="hamburger-menu" data-action="click->modal#open touchstart->modal#open">
     <div class="hamburger-menu-line"></div>
     <div class="hamburger-menu-line"></div>
     <div class="hamburger-menu-line"></div>
