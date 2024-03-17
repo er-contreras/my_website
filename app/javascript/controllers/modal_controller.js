@@ -8,6 +8,8 @@ export default class extends Controller {
     console.log("click open");
 
     document.getElementById("modal").style.display = "block";
+
+    alert('Click open')
   }
 
   close(event) {
