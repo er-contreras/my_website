@@ -71,7 +71,12 @@
   </div>
 
   <div class="container" style="padding-top: <%= current_page?(root_path) ? '12%;' : '7%;' %>">
-    <a>Erick C. Website, <span style="color: yellow; border: 2px solid orange; padding: 1rem;">Under Construction! 👷‍️💻🚧</span> </a>
+    <a>
+      <h3 id="change-color">Erick C. Website</h3>
+      <% if current_page?(projects_path) %>
+        <span style="color: yellow; border: 2px solid orange; padding: 0.6rem; margin-top: 2rem; font-size: 2rem;">Under Construction! 👷‍️💻🚧</span>
+      <% end %>
+    </a>
 
     <% if current_page?(root_path) %>
       <h1>
@@ -121,5 +126,19 @@
     </a>
   </div>
 </footer>
+
+<script>
+  const colors = ["tomato", "orange", "yellow", "green", "blue", "indigo", "violet", "purple", "pink", "red", "white"];
+  let i = 0;
+
+  function changeColor() {
+    document.getElementById("change-color").style.color = colors[Math.floor(Math.random() * colors.length)];
+    i = (i + 1) % colors.length;
+  }
+
+  setInterval(function () {
+    changeColor();
+  }, 1000);
+</script>
 </body>
 </html>
