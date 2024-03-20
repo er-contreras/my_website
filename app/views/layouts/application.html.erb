@@ -126,19 +126,5 @@
     </a>
   </div>
 </footer>
-
-<script>
-  const colors = ["tomato", "orange", "yellow", "green", "blue", "indigo", "violet", "purple", "pink", "red", "white"];
-  let i = 0;
-
-  function changeColor() {
-    document.getElementById("change-color").style.color = colors[Math.floor(Math.random() * colors.length)];
-    i = (i + 1) % colors.length;
-  }
-
-  setInterval(function () {
-    changeColor();
-  }, 1000);
-</script>
 </body>
 </html>
