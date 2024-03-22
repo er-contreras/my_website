@@ -2,7 +2,19 @@ import {Controller} from "@hotwired/stimulus"
 //
 export default class extends Controller {
   connect() {
-    const colorsArray = ["tomato", "orange", "yellow", "green", "blue", "indigo", "violet", "purple", "pink", "red", "white"];
+    const colorsArray = [
+      "#dabdbd",
+      "#d3c1b1",
+      "#d5d5b4",
+      "#9bb49b",
+      "#aeaed5",
+      "#b7a8ce",
+      "#b99ec7",
+      "#ccafb5",
+      "#d2b6bd",
+      "#ceb0b0",
+      "#c4c4c4"
+    ];
     let i = 0;
 
     function changeColor() {
