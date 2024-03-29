@@ -3,9 +3,10 @@
 }
 
 .about-img {
-  background-image: url("./me_at_home.png");
+  background-image: url("./me_at_office_though.png");
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
   width: 40%;
 }
 
@@ -33,11 +34,13 @@
   }
 
   .about-img-top {
-    background-image: url("./me_at_home.png");
+    background-image: url("./me_at_office_though.png");
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
     width: 81vw;
     height: 31vh;
+    margin-bottom: 4rem;
   }
 
   .about-description {

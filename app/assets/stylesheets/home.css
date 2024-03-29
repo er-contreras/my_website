@@ -1,5 +1,5 @@
 .col1, .col2 {
-  padding: 2rem;
+  padding: 2rem 0;
 }
 
 .col1 h4, .col2 h4{
@@ -28,6 +28,15 @@ main li::marker {
   line-height: 5rem;
 }
 
+.home-ul-wrapper, .bgimage-col-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.home-ul-wrapper ul {
+  max-width: 72%;
+}
+
 /* Media queries */
 @media (max-width: 1450px) {
   #site-header .container {
@@ -42,7 +51,7 @@ main li::marker {
   }
 
   .bgimage-col1, .bgimage-col2 {
-    height: 8rem;
+    height: 5rem;
     margin-top: 0rem;
   }
 }
@@ -50,5 +59,17 @@ main li::marker {
 @media (max-width: 390px) {
   main ul li {
     font-size: 1.5rem;
+  }
+
+  .col1 h4, .col2 h4{
+    font-size: 1.7rem;
+  }
+
+  body {
+    line-height: 14px;
+  }
+
+  main li::marker {
+     line-height: 2rem;
   }
 }

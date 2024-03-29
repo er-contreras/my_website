@@ -1,5 +1,5 @@
 header {
-  padding: 4rem 0;
+  padding-top: 4rem;
 }
 
 #site-header {
@@ -269,11 +269,11 @@ header {
 
 @media (max-width: 480px) {
   #site-header {
-    height: 37vh!important;
+    height: 34vh!important;
   }
 
   header {
-    padding: 7rem 0;
+    padding-top: 5rem;
   }
 
   #site-header-other-paths {
@@ -320,7 +320,7 @@ header {
 
 @media (max-width: 375px) {
   #site-header .container h1, #site-header-other-paths .container h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   #site-header .container a, #site-header-other-paths .container a {
