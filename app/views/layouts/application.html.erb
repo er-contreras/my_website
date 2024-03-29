@@ -73,7 +73,12 @@
 
   <div class="container" style="padding-top: <%= current_page?(root_path) ? '12%;' : '7%;' %>">
     <a>
-      <h3 id="change-color">Erick C. Website</h3>
+      <h3 id="change-color">
+        Erick Contreras
+        <% unless current_page?(root_path) %>
+          <span style="font-size: 1rem">Software Developer</span>
+        <% end %>
+      </h3>
       <% if current_page?(projects_path) %>
         <span style="color: yellow; border: 2px solid orange; padding: 0.6rem; margin-top: 2rem; font-size: 2rem;">Under Construction! 👷‍️💻🚧</span>
       <% end %>

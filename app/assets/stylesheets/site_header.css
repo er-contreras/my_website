@@ -39,13 +39,10 @@ header {
 
 #site-header .container a, #site-header-other-paths .container a {
   font-size: 2.5rem;
-  margin-bottom: 5rem;
-
 }
 
 #site-header .container h1, #site-header-other-paths .container h1 {
   font-size: 5rem;
-  margin-top: 3rem;
   line-height: 6rem;
   letter-spacing: 0.2rem;
 }
@@ -228,11 +225,10 @@ header {
 
 @media (max-width: 540px) {
   #site-header .container a, #site-header-other-paths .container a {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   #site-header .container h1, #site-header-other-paths .container h1 {
-    margin-top: 3rem;
     line-height: 6rem;
     letter-spacing: 0.1rem;
   }
@@ -321,10 +317,6 @@ header {
 @media (max-width: 375px) {
   #site-header .container h1, #site-header-other-paths .container h1 {
     font-size: 1.8rem;
-  }
-
-  #site-header .container a, #site-header-other-paths .container a {
-    /*font-size: 1rem;*/
   }
 
   .rights-reserved p:first-child {
