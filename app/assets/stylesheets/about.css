@@ -11,12 +11,11 @@
 }
 
 .about-container h2 {
-  text-align: center;
-  padding: 2rem 0 4rem 0;
+  padding: 4rem 0;
 }
 
 .about-description {
-  max-width: 60%;
+  max-width: 90%;
   padding-right: 2rem;
 }
 
@@ -41,7 +40,6 @@
     background-position: center;
     width: 81vw;
     height: 31vh;
-    margin-bottom: 4rem;
   }
 
   .about-description {
@@ -51,5 +49,17 @@
 
   .about-container h2 {
     font-size: 2.5rem;
+  }
+
+  .about-container {
+    padding-top: 2rem;
+  }
+
+  .about-image-wrapper {
+    display: flex;
+    justify-content: center;
+    background-color: #eaeaea;
+    border-radius: 8%;
+    border: 1px solid #cee6ff;
   }
 }

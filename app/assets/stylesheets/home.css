@@ -28,9 +28,8 @@ main li::marker {
   line-height: 5rem;
 }
 
-.home-ul-wrapper, .bgimage-col-wrapper {
-  display: flex;
-  justify-content: center;
+.home-ul-wrapper {
+  padding-left: 2rem;
 }
 
 .home-ul-wrapper ul {

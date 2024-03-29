@@ -21,6 +21,7 @@
   justify-content: center;
   background-color: #f7f7f7;
   max-width: 40%;
+  border: 1px solid #e8e1ff;
 }
 
 .language-img-content img {
@@ -70,5 +71,10 @@
 
   .language-description strong {
     padding-top: 4rem;
+  }
+
+  .language-img-content img {
+    width: 40%;
+    padding: 3rem;
   }
 }

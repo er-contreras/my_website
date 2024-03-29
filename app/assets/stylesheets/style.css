@@ -98,7 +98,6 @@ footer {
 @media (max-width: 1000px) {
   main .row {
     flex-direction: column;
-    align-items: center;
     padding: 0;
   }
 

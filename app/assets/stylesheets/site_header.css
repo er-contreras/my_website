@@ -122,10 +122,10 @@ header {
 }
 
 .hamburger-menu-line {
-  width: 35px;
-  height: 5px;
+  width: 37px;
+  height: 2px;
   background-color: white;
-  margin: 6px 0;
+  margin: 10px 0;
 }
 
 /* query for mobile */
@@ -364,7 +364,7 @@ header {
 
 .modal-content ul li {
   margin: 3rem 0rem !important;
-  font-size: 6rem;
+  font-size: 5rem;
 }
 
 .modal-content ul li a {
