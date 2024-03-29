@@ -1,5 +1,5 @@
 .col1, .col2 {
-  padding: 2rem 0;
+  padding: 2rem;
 }
 
 .col1 h4, .col2 h4{
@@ -71,5 +71,9 @@ main li::marker {
 
   main li::marker {
      line-height: 2rem;
+  }
+
+  .col1, .col2 {
+    padding: 2rem 0;
   }
 }

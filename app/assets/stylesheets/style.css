@@ -41,7 +41,7 @@ main {
 }
 
 main .section-content {
-  padding: 0 0 10rem 0;
+  /*padding: 0 0 10rem 0;*/
 }
 
 main .outer {
@@ -52,7 +52,7 @@ main .outer {
 
 main .container {
   max-width: 110rem;
-  padding: 6rem 9rem 0 9rem;
+  padding: 6rem 9rem 9rem 9rem;
   font-size: 2rem;
   height: 100%;
   background-color: white;
@@ -61,7 +61,7 @@ main .container {
 main .row {
   display: flex;
   justify-content: space-around;
-  padding: 0 0 4rem 0;
+  /*padding: 0 0 4rem 0;*/
   height: 100%;
   max-width: 90rem;
 }

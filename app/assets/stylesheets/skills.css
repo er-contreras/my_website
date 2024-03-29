@@ -6,6 +6,10 @@
   margin: 4rem 0;
 }
 
+.skills-content h2 {
+  padding: 2rem 0 0 0;
+}
+
 .language-content {
   display: flex;
   max-width: 100%;
@@ -65,6 +69,6 @@
   }
 
   .language-description strong {
-    text-align: center;
+    padding-top: 4rem;
   }
 }
