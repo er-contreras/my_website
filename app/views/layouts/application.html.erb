@@ -20,17 +20,17 @@
   <source src="<%= ENV['S3_BUCKET_VIDEO'] %>" type="video/mp4">
 </video>
 
-<header id="<%= current_page?(root_path) ? 'site-header' : 'site-header-other-paths' %>" data-controller="modal">
+<header id="<%= current_page?(root_path) ? 'site-header' : 'site-header-other-paths' %>">
   <!-- Hamburger button -->
-  <button id="hamburger-menu" data-action="click->modal#open touchstart->modal#open">
+  <button id="hamburger-menu">
     <div class="hamburger-menu-line"></div>
     <div class="hamburger-menu-line"></div>
     <div class="hamburger-menu-line"></div>
   </button>
 
   <!-- Mobile menu or modal -->
-  <div id="modal" data-modal-target="modal">
-    <div class="modal-x" data-action="click->modal#close">X</div>
+  <div id="modal">
+    <div id="modal-x">X</div>
     <div class="modal-content">
       <ul>
         <li><%= link_to 'Home', root_path, class: ('active' if current_page?(root_path)) %></li>
@@ -128,4 +128,27 @@
   </div>
 </footer>
 </body>
+
+<script>
+  var menu_button = document.getElementById("hamburger-menu");
+  var modal = document.getElementById("modal");
+
+  menu_button.addEventListener("click", () => {
+    if (modal) {
+      modal.style.display = "block";
+    } else {
+      console.error("Modal element not found.");
+    }
+  });
+
+  var close_button = document.getElementById("modal-x");
+
+  close_button.addEventListener("click", () => {
+    if (modal) {
+      modal.style.display = "none";
+    } else {
+      console.error("Modal element not found.");
+    }
+  });
+</script>
 </html>
