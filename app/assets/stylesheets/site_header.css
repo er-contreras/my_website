@@ -363,8 +363,8 @@ header {
 }
 
 .modal-content ul li {
-  margin: 2rem 2rem !important;
-  font-size: 2rem;
+  margin: 3rem 0rem !important;
+  font-size: 6rem;
 }
 
 .modal-content ul li a {
