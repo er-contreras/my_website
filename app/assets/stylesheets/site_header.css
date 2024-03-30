@@ -143,13 +143,9 @@ header {
     display: none;
   }
 
-  #site-header, #site-header-other-paths {
-    height: 55vh!important;
-  }
 
   #site-header-other-paths {
     padding: 8rem 0 0 0;
-    height: 21vh !important;
     text-align: center;
   }
 
@@ -178,13 +174,8 @@ header {
 }
 
 @media (max-width: 886px) {
-  #site-header, #site-header-other-paths {
-    height: 50vh!important;
-  }
-
   #site-header-other-paths {
     padding: 8rem 0 0 0;
-    height: 21vh !important;
     text-align: center;
   }
 }
@@ -197,16 +188,11 @@ header {
 
   #site-header-other-paths {
     padding: 8rem 0 0 0;
-    height: 21vh !important;
     text-align: center;
   }
 }
 
 @media (max-width: 645px) {
-  #site-header, #site-header-other-paths {
-    height: 45vh!important;
-  }
-
   #site-header .container, #site-header-other-paths .container {
     width: 85%;
     padding-top: 40%;
@@ -218,7 +204,6 @@ header {
 
   #site-header-other-paths {
     padding: 8rem 0 0 0;
-    height: 21vh !important;
     text-align: center;
   }
 }
@@ -241,7 +226,6 @@ header {
 
   #site-header-other-paths {
     padding: 8rem 0 0 0;
-    height: 21vh !important;
     text-align: center;
   }
 }
@@ -258,23 +242,21 @@ header {
 
   #site-header-other-paths {
     padding: 8rem 0 0 0;
-    height: 21vh !important;
     text-align: center;
   }
 }
 
 @media (max-width: 480px) {
-  #site-header {
-    height: 34vh!important;
-  }
-
   header {
     padding-top: 5rem;
   }
 
+  #site-header {
+    height: 34vh;
+  }
+
   #site-header-other-paths {
     padding: 8rem 0 0 0;
-    height: 21vh !important;
     text-align: center;
   }
 
@@ -325,7 +307,6 @@ header {
 
   #site-header-other-paths {
     padding: 8rem 0 0 0;
-    height: 21vh !important;
     text-align: center;
   }
 }
