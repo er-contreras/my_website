@@ -30,13 +30,23 @@ header {
   margin: 0 2rem;
 }
 
-#site-header .container, #site-header-other-paths .container {
+#site-header .container {
   display: flex;
   justify-content: center;
   align-items: stretch;
   position: relative;
   top: 17rem;
   right: 5rem;
+  color: white;
+}
+
+#site-header-other-paths .container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  position: relative;
+  top: 12rem;
+  right: 35rem;
   color: white;
 }
 
@@ -135,7 +145,12 @@ header {
   }
 
   .name-header {
-    padding: 0 0 0 3rem;
+    padding: 0 0 0 2.2rem;
+  }
+
+  .name-header h3 {
+    display: flex;
+    flex-direction: column;
   }
 
   #site-header .container h1, #site-header-other-paths .container h1 {
@@ -230,7 +245,7 @@ header {
 
 @media (max-width: 400px) {
   #site-header .container h1, #site-header-other-paths .container h1 {
-    font-size: 1rem;
+    font-size: 3.2rem;
   }
 }
 
