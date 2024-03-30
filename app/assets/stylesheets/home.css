@@ -37,13 +37,6 @@ main li::marker {
 }
 
 /* Media queries */
-@media (max-width: 1450px) {
-  #site-header .container {
-    padding-top: 14%!important;
-    text-align: center;
-  }
-}
-
 @media (max-width: 1000px) {
   main .container {
     padding: 3rem 0 0 0;
@@ -55,7 +48,7 @@ main li::marker {
   }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 475px) {
   main ul li {
     font-size: 1.5rem;
   }

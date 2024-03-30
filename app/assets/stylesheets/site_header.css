@@ -31,10 +31,13 @@ header {
 }
 
 #site-header .container, #site-header-other-paths .container {
-  width: 50%;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  position: relative;
+  top: 17rem;
+  right: 5rem;
   color: white;
-  padding-top: 12%;
 }
 
 #site-header .container a, #site-header-other-paths .container a {
@@ -126,23 +129,24 @@ header {
 }
 
 /* query for mobile */
-@media (max-width: 1450px) {
-  #site-header .container h1, #site-header-other-paths .container h1{
-    font-size: 3rem;
-  }
-}
-
-@media (max-width: 1192px) {
-  #site-header .container, #site-header-other-paths .container{
-    width: 60%;
-  }
-}
-
 @media (max-width: 1000px) {
+  #site-header {
+    height: 35vh;
+  }
+
+  .name-header {
+    padding: 0 0 0 3rem;
+  }
+
+  #site-header .container h1, #site-header-other-paths .container h1 {
+    font-size: 4rem;
+    line-height: 5rem;
+    letter-spacing: 0.2rem;
+  }
+
   .full-container {
     display: none;
   }
-
 
   #site-header-other-paths {
     padding: 8rem 0 0 0;
@@ -150,8 +154,12 @@ header {
   }
 
   #site-header .container, #site-header-other-paths .container {
-    width: 75%;
-    padding-top: 24%;
+     display: block;
+     justify-content: unset;
+     position: unset;
+     top: 0;
+     right: 0;
+    color: white;
   }
 
   #site-header ul, #site-header-other-paths ul {
@@ -173,84 +181,7 @@ header {
   }
 }
 
-@media (max-width: 886px) {
-  #site-header-other-paths {
-    padding: 8rem 0 0 0;
-    text-align: center;
-  }
-}
-
-@media (max-width: 800px) {
-  #site-header .container, #site-header-other-paths .container {
-    width: 86%;
-    padding-top: 33%;
-  }
-
-  #site-header-other-paths {
-    padding: 8rem 0 0 0;
-    text-align: center;
-  }
-}
-
-@media (max-width: 645px) {
-  #site-header .container, #site-header-other-paths .container {
-    width: 85%;
-    padding-top: 40%;
-  }
-
-  #site-header .container a, #site-header-other-paths .container a {
-    font-size: 2.5rem;
-  }
-
-  #site-header-other-paths {
-    padding: 8rem 0 0 0;
-    text-align: center;
-  }
-}
-
-@media (max-width: 540px) {
-  #site-header .container a, #site-header-other-paths .container a {
-    font-size: 2rem;
-  }
-
-  #site-header .container h1, #site-header-other-paths .container h1 {
-    line-height: 6rem;
-    letter-spacing: 0.1rem;
-  }
-
-  .rights-reserved p:first-child {
-    font-size: 1.5rem!important;
-    color: #3d3d3d;
-    font-weight: bold;
-  }
-
-  #site-header-other-paths {
-    padding: 8rem 0 0 0;
-    text-align: center;
-  }
-}
-
-@media (max-width: 508px) {
-  #site-header .container h1, #site-header-other-paths .container h1 {
-    line-height: 4rem;
-    letter-spacing: 0.01rem;
-  }
-
-  main .section-content {
-    padding: 0 0 1rem 0!important;
-  }
-
-  #site-header-other-paths {
-    padding: 8rem 0 0 0;
-    text-align: center;
-  }
-}
-
-@media (max-width: 480px) {
-  header {
-    padding-top: 5rem;
-  }
-
+@media (max-width: 475px) {
   #site-header {
     height: 34vh;
   }
@@ -258,7 +189,7 @@ header {
   #site-header-other-paths {
     padding: 8rem 0 0 0;
     text-align: center;
-    height: 20vh;
+    height: 34vh;
   }
 
   .modal-buttons {
@@ -266,7 +197,7 @@ header {
   }
 
   #site-header .container h1, #site-header-other-paths .container h1 {
-    font-size: 2rem;
+    line-height: 4rem;
   }
 
   #site-header .container a, #site-header-other-paths .container a {
@@ -297,18 +228,9 @@ header {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
   #site-header .container h1, #site-header-other-paths .container h1 {
-    font-size: 1.8rem;
-  }
-
-  .rights-reserved p:first-child {
-    font-size: 1rem!important;
-  }
-
-  #site-header-other-paths {
-    padding: 8rem 0 0 0;
-    text-align: center;
+    font-size: 1rem;
   }
 }
 

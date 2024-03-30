@@ -80,26 +80,28 @@
     </ul>
   </div>
 
-  <div class="container" style="padding-top: <%= current_page?(root_path) ? '12%;' : '7%;' %>">
-    <a>
-      <h3 id="change-color">
-        Erick Contreras
-        <% unless current_page?(root_path) %>
-          <span style="font-size: 1rem">Software Developer</span>
+  <div class="container">
+    <div class="name-header">
+      <a>
+        <h3 id="change-color">
+          Erick Contreras
+          <% unless current_page?(root_path) %>
+            <span style="font-size: 1rem">Software Developer</span>
+          <% end %>
+        </h3>
+        <% if current_page?(projects_path) %>
+          <span style="color: yellow; border: 2px solid orange; padding: 0.6rem; margin-top: 2rem; font-size: 2rem;">Under Construction! 👷‍️💻🚧</span>
         <% end %>
-      </h3>
-      <% if current_page?(projects_path) %>
-        <span style="color: yellow; border: 2px solid orange; padding: 0.6rem; margin-top: 2rem; font-size: 2rem;">Under Construction! 👷‍️💻🚧</span>
-      <% end %>
-    </a>
+      </a>
 
-    <% if current_page?(root_path) %>
-      <h1>
-        Professional Software Developer
-        <br style="padding: 1rem 0;">
-        Get your custom website today!
-      </h1>
-    <% end %>
+      <% if current_page?(root_path) %>
+        <h1>
+          Professional Software Developer
+          <br style="padding: 1rem 0;">
+          Get your custom website today!
+        </h1>
+      <% end %>
+    </div>
   </div>
 </header>
 
