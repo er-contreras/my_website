@@ -258,6 +258,7 @@ header {
   #site-header-other-paths {
     padding: 8rem 0 0 0;
     text-align: center;
+    height: 20vh;
   }
 
   .modal-buttons {
