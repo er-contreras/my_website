@@ -3,7 +3,7 @@
 }
 
 .about-img {
-  background-image: url("./me_at_office_though.png");
+  background-image: url("./me_at_home.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -34,7 +34,7 @@
   }
 
   .about-img-top {
-    background-image: url("./me_at_office_though.png");
+    background-image: url("./me_at_home.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -58,8 +58,5 @@
   .about-image-wrapper {
     display: flex;
     justify-content: center;
-    background-color: #eaeaea;
-    border-radius: 8%;
-    border: 1px solid #cee6ff;
   }
 }
