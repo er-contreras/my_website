@@ -16,6 +16,7 @@ gem "stripe"
 
 group :development, :test do
   gem "debug", platforms: %i[ mri windows ]
+  gem "dotenv"
 end
 
 group :development do
