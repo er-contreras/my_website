@@ -4,10 +4,12 @@ header {
 
 #site-header {
   height: 75vh;
+  background-color: #4d0000;
 }
 
 #site-header-other-paths {
   height: 34vh;
+  background-color: #4d0000;
 }
 
 #site-header button, #site-header-other-paths button {
@@ -37,7 +39,7 @@ header {
   position: relative;
   top: 17rem;
   right: 5rem;
-  color: white;
+  color: #ffbaba;
 }
 
 #site-header-other-paths .container {
@@ -87,7 +89,7 @@ header {
   text-decoration: underline !important;
   text-underline-offset: 0.5rem !important;
   text-decoration-thickness: from-font !important;
-  color: #ff9100 !important;
+  color: #aacc31 !important;
 }
 
 .buttons {
@@ -109,17 +111,17 @@ header {
 }
 
 .buttons a:first-child:hover {
-  background-color: var(--blue);
+  background-color: #bd3434;
 }
 
 .buttons a:last-child {
-  background-color: #d35a01;
+  background-color: #748637;
   color: white;
   text-transform: uppercase;
 }
 
 .buttons a:hover {
-  background-color: #e56200;
+  background-color: #879b43;
   color: white;
 }
 
