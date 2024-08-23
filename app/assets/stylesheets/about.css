@@ -3,12 +3,12 @@
 }
 
 .about-img {
-  background-image: url("./me_at_home.png");
+  background-image: url("./about_pic.jpeg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   width: 240%;
-  border-radius: 50rem;
+  // border-radius: 50rem;
 }
 
 .about-container h2 {
@@ -35,7 +35,7 @@
   }
 
   .about-img-top {
-    background-image: url("./me_at_home.png");
+    background-image: url("./about_pic.jpeg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
